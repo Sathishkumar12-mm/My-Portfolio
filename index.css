@@ -1,0 +1,1055 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#080808;
+    --sec-color:#940f98;
+    --text:#f7eaf7;
+    --main-color:#f10cf8;
+}
+body{
+    color: var(--text);
+    line-height: 1.5;
+  font-family: "Schibsted Grotesk", sans-serif;
+    font-weight: 400;
+    word-spacing: 5px;
+    letter-spacing: 1.5px;
+    height: 100%;
+    background-color: #180718;
+}
+/* ---------navigation---------- */
+nav{
+    color: var(--text);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1E031F;
+}
+.hd h1{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.sections{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sections li{
+    list-style: none;
+}
+.sections li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    color:var(--text);
+    position: relative;
+}
+.sections a:hover{
+    color: var(--main-color);
+    filter: drop-shadow(0 0 10px var(--main-color));
+}
+/* ---------navigation---------- */
+body{
+    overflow-x: hidden;
+}
+/*------------- name sections--------- */
+.namesec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 0;
+}
+.lns{
+    width: 45%;
+}
+.lns span{
+    color: var(--main-color);
+}
+.lns h1{
+    font-size: 3rem;
+    animation: h1 2s ease;
+}
+@keyframes h1{
+    from{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+.lns p{
+    font-size: 1.2rem;
+     animation: p 2s ease;
+}
+@keyframes p{
+    from{
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+}
+.rns{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    animation: psd 1s ease;
+}
+.prns{
+     position: relative;
+}
+.prns::before{
+    content: '<';
+    font-weight: bolder;
+    color: transparent;
+    filter: blur(5px);
+    -webkit-text-stroke:5px var(--main-color);
+    font-size: 16rem;
+    position: absolute;
+    top: -12rem;
+    left: -11rem;
+}
+.prns::after{
+    content: '>';
+    font-size: 16rem;
+    filter: blur(5px);
+    color: transparent;
+    -webkit-text-stroke:5px var(--main-color);
+    font-weight:bolder;
+    position:absolute;
+    top: 4rem;
+    left:16rem;
+}
+@keyframes psd{
+    from{
+        opacity: 0;
+        transform: translateX(15rem);
+    }
+}
+.rns:hover{
+        
+   box-shadow: 0 0 20px var(--main-color);
+}
+.rns img{
+    
+    width: 100%;
+    transition: 1s ease;
+    animation: ff 2s ease-in-out infinite;
+}
+@keyframes ff{
+    10%,30%,50%,70%,90%{
+        filter: drop-shadow(0 0 10px var(--sec-color));
+    }
+}
+.rns img:hover{
+    animation: none;
+    transform: scale(1.2);
+}
+
+/*------------- name sections--------- */
+/* ---------about section----------- */
+.aboutsec{
+    text-align: center;
+}
+.aboutsec h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg, #f10cf8, #940f98, #e88feb);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: grade 3s linear;
+    animation-timeline: view();
+    animation-range: entry 30% cover 60%;
+}
+.about h1{
+    font-size: 3rem;
+    color: white;
+}
+.mds{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.about{
+    width: 80%;
+    text-align: left;
+    padding: 2rem 0;
+}
+.about p{
+    font-size: 1.2rem;
+}
+/* ---------about section----------- */
+/* ----------skill section---------- */
+.skillsec{
+    margin: 3rem 0;
+    text-align: center;
+}
+.skillsec h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg, #f10cf8, #940f98, #e88feb);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: grade 3s linear;
+    animation-timeline: view();
+    animation-range: entry 30% cover 60%;
+}
+.sboxes{
+    margin: 3rem 0;
+    padding: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+.box{
+    overflow-x: hidden;
+    height: 18rem;
+    width: 14rem;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box:nth-child(odd){
+    animation: fade 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes fade{
+    0%{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+}
+.box:nth-child(even){
+    animation: fade1 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes fade1{
+    0%{
+        transform: translateX(10rem);
+        opacity: 0;
+    }
+}
+ .box img{
+    height: 7rem;
+ }
+ .box7 img{
+    height: 4rem;
+ }
+ .box7 h2{
+    transform: translateY(1.7rem);
+ }
+ .box h2{
+    margin-top: 3rem;
+    padding: 0.2rem 3rem;
+ }
+ .box:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px var(--sec-color));
+    perspective: 100px;
+    transform:translateY(-2rem);
+    transition: all 0.3s ease;
+ }
+ .sboxes:hover>.box:not(:hover){
+    filter: blur(10px);
+ }
+ .box:hover img{
+    transform: scale(1.2);
+ }
+/* ----------skill section---------- */
+/* ----------project section-------- */
+.projectsec{
+    text-align: center;
+    margin: 4rem 0;
+}
+.projectsec h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg, #f10cf8, #940f98, #e88feb);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: grade 3s linear;
+    animation-timeline: view();
+    animation-range: entry 30% cover 60%;
+}
+.bpar{
+    margin: 3rem 0;
+}
+.bcld{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    gap: 4rem;
+}
+.pi{
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+.i1{
+    height: 13rem;
+    width: 18rem;
+    background: rgba(41, 98, 255, 0.25);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transform: translateY(6rem);
+    z-index: 1;
+    transition:all 1s linear;
+}
+.i2{
+    transform: translateY(-6rem);
+    position: relative;
+    left: 0.9rem;
+    transition:all 1s linear;
+    border-radius: 10px;
+}
+.pi:hover .i1{
+    transform: translateY(0);
+}
+.pi:hover .i2{
+    transform: translateY(0);
+}
+.pi,.pd{
+    animation:fadeup 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes fadeup{
+    0%{
+        transform: translateY(3rem);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.bcld img{
+    height: 13rem;
+    width: 18rem;
+}
+.pd{
+    margin-right: 8%;
+}
+.pd p{
+    margin: 1rem 0;
+}
+.pd a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    background-color: var(--sec-color);
+    border-radius: 10px;
+}
+.pd i{
+    animation: shake 2s ease infinite;
+}
+@keyframes shake{
+    10%{
+        transform: scale(1.5) rotate(8deg);
+    }
+    20%{
+        transform: scale(1.5) rotate(-8deg);
+    }
+    30%{
+        transform: scale(1.5) rotate(8deg);
+    }
+    40%{
+        transform: none;
+    }
+}
+.pd a:hover{
+    opacity: 0.8;
+}
+/* ----------project section-------- */
+/* --------Education Section-------- */
+.edusec{
+    text-align: center;
+}
+.edusec h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg, #f10cf8, #940f98, #e88feb);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: grade 3s linear;
+    animation-timeline: view();
+    animation-range: entry 30% cover 60%;
+}
+.gbrder{
+    margin: 3rem;
+    height: 16rem;
+    width: 80%;
+    margin-left: 10%;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.gb1{
+    width: 10%;
+    height: 74%;
+    background-color:var(--main-color);
+    position: relative;
+}
+.gb{
+    opacity: 0;
+    animation: grow auto ease-out forwards;
+    animation-timeline:view();
+    animation-range: entry 100% cover 40%;
+    transform-origin: bottom;
+}
+@keyframes grow{
+    from{
+        height: 0%;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.gb1::after{
+    content: '74%';
+    position: absolute;
+    top: -2rem;
+    right:0.3rem;
+}
+.gb1::before{
+    content: '10th';
+    position: absolute;
+    right:0.3rem;
+    top: 108%;
+}
+.gb2{
+    width: 10%;
+    height: 80%;
+    background-color: var(--main-color);
+    position: relative;
+}
+.gb2::after{
+    content: '80%';
+    position: absolute;
+    top: -2rem;
+    right:0.3rem;
+}
+.gb2::before{
+    content: '12th';
+    position: absolute;
+    right:0.3rem;
+    top: 108%;
+}
+.gb3{
+    width: 10%;
+    height: 82%;
+    background-color: var(--main-color);
+    position: relative;
+}
+.gb3::after{
+    content: '82%';
+    position: absolute;
+    top: -2rem;
+    right:0.3rem;
+}
+.gb3::before{
+    content: 'B.sc';
+    position: absolute;
+    right:0.3rem;
+    top: 108%;
+}
+.gb4{
+    width: 10%;
+    height: 50%;
+    background-color: var(--main-color);
+    position: relative;
+}
+.gb4::after{
+    content: 'Present';
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: -4.5rem;
+    right:0.3rem;
+}
+.gb4::before{
+    content: 'M.sc';
+    position: absolute;
+}
+/* --------contact section--------- */
+.consec{
+    text-align: center;
+    margin-top: 10rem;
+}
+.consec h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg, #f10cf8, #940f98, #e88feb);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: grade 3s linear;
+    animation-timeline: view();
+    animation-range: entry 30% cover 60%;
+}
+@keyframes grade{
+    to{
+        background-position: 200%;
+    }
+}
+.form{
+    text-align: left;
+    margin: 5rem 10%;
+    padding: 5%;
+    color: #F7EAF7;
+    background-color: #1E031F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.form input,textarea{
+    background-color: #131313;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    outline: none;
+    border: 3px solid #940f98;
+    border-radius: 9px;
+}
+.form input:focus{
+    border:3px solid white;
+}
+.form textarea:focus{
+    border:3px solid white;
+}
+.form {
+    margin-bottom: 2rem;
+}
+.form:hover{
+    box-shadow: 0 0 20px var(--sec-color);
+}
+.form a{
+    text-align: center;
+    margin: auto;
+    height: fit-content;
+    width: 50%;
+    padding: 0.6rem;
+    border-radius: 35px;
+    text-decoration: none;
+    color: black;
+    background-color: #f10cf8;
+}
+.form a:hover{
+    transition: all 0.1s ease;
+    transform: scale(1.04);
+    box-shadow: 0 0 15px #f10cf8 ;
+}
+.fsec{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.fsec a{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    text-decoration: none;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.fsec a:hover{
+    border: none;
+    background-color:var(--main-color);
+    transform: translateY(-15px);
+    box-shadow: 0 0 20px var(--main-color);
+}
+.fsec a:hover i{
+    color: black;
+}
+/* --------contact section--------- */
+
+/* ---------media query----------- */
+@media screen and (min-width:1200px){
+/* ---------Contact section--------- */
+    .form{
+        width: 50%;
+        margin-left: 25%;
+    }
+/* ---------Contact section--------- */
+/* --------education section-------- */
+.gb{
+    animation-range: entry 95% cover 40%;
+    transform-origin: bottom;
+    transition: all 1s ease-out;
+}
+.gbrder{
+    height: 35rem;
+    width: 70%;
+    margin-left: 15%;
+}
+.gb1{
+    width: 7%;
+}
+.gb1::after{
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right:1rem;
+}
+.gb1::before{
+    font-size: 1.5rem;
+    right:1.1rem;
+    top: 108%;
+}
+.gb2{
+    width: 7%;
+    position: relative;
+}
+.gb2::after{
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right:1rem;
+}
+.gb2::before{
+    font-size: 1.5rem;
+    right:1rem;
+    top: 108%;
+}
+.gb3{
+    width: 7%;
+}
+.gb3::after{
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right:1rem;
+}
+.gb3::before{
+    font-size: 1.5rem;
+    right:0.8rem;
+    top: 108%;
+}
+.gb4{
+    width: 7%;
+}
+.gb4::after{
+    font-size: 1.5rem;
+    top: -6.5rem;
+    right:1.2rem;
+}
+.gb4::before{
+    font-size: 1.5rem;
+    right:0.6rem;
+    top: 113%;
+}
+/* -------education section---------- */
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+/* ---------Contact section--------- */
+    .form{
+        width: 50%;
+        margin-left: 25%;
+    }
+/* ---------Contact section--------- */
+/* --------education section-------- */
+.gbrder{
+    height: 35rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.gb{
+    animation-range: entry 100% cover 38%;
+}
+.gb1{
+    width: 9%;
+}
+.gb1::after{
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right:1rem;
+}
+.gb1::before{
+    font-size: 1.5rem;
+    right:1.3rem;
+    top: 108%;
+}
+.gb2{
+    width: 9%;
+    position: relative;
+}
+.gb2::after{
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right:1rem;
+}
+.gb2::before{
+    font-size: 1.5rem;
+    right:1.2rem;
+    top: 108%;
+}
+.gb3{
+    width: 9%;
+}
+.gb3::after{
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right:1rem;
+}
+.gb3::before{
+    font-size: 1.5rem;
+    right:1rem;
+    top: 108%;
+}
+.gb4{
+    width: 9%;
+}
+.gb4::after{
+    font-size: 1.5rem;
+    top: -6.5rem;
+    right:1.2rem;
+}
+.gb4::before{
+    font-size: 1.5rem;
+    right:0.8rem;
+    top: 113%;
+}
+/* -------education section---------- */
+}
+@media screen and (min-width:768px) and (max-width:991px){
+/* ---------Contact section--------- */
+    .form{
+        width: 60%;
+        margin-left: 20%;
+    }
+/* ---------Contact section--------- */
+/* --------education section-------- */
+.gbrder{
+    height: 28rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.gb{
+    animation-range: entry 100% cover 40%;
+}
+.gb1{
+    width: 10%;
+}
+.gb1::after{
+    font-size: 1.3rem;
+    top: -2.5rem;
+    right:0.6rem;
+}
+.gb1::before{
+    font-size: 1.3rem;
+    right:1.1rem;
+    top: 108%;
+}
+.gb2{
+    width: 10%;
+    position: relative;
+}
+.gb2::after{
+    font-size: 1.3rem;
+    top: -2.5rem;
+    right:0.6rem;
+}
+.gb2::before{
+    font-size: 1.3rem;
+    right:1.2rem;
+    top: 108%;
+}
+.gb3{
+    width: 10%;
+}
+.gb3::after{
+    font-size: 1.3rem;
+    top: -2.5rem;
+    right:0.7rem;
+}
+.gb3::before{
+    font-size: 1.3rem;
+    right:1rem;
+    top: 108%;
+}
+.gb4{
+    width: 10%;
+}
+.gb4::after{
+    font-size: 1.3rem;
+    top: -5.7rem;
+    right:1.2rem;
+}
+.gb4::before{
+    font-size: 1.3rem;
+    right:0.8rem;
+    top: 113%;
+}
+/* -------education section---------- */
+}
+@media screen and (min-width:576px) and (max-width:767px){
+/* -------navigation section---------- */
+
+    .sections{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .lns h1{
+        font-size: 2.5rem;
+    }
+    .lns p{
+        font-size: 1rem;
+    }
+/* -------navigation section---------- */
+/* ---------about section----------- */
+    .about{
+        overflow-x: hidden;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+/* ---------about section----------- */
+/* -----------education section---------- */
+.gbrder{
+    height: 27rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.gb{
+    animation-range: entry 100% cover 40%;
+}
+.gb1{
+    width: 10%;
+}
+.gb1::after{
+    right:0.6rem;
+}
+.gb1::before{
+    font-size: 1.1rem;
+    right:0.9rem;
+    top: 108%;
+}
+.gb2{
+    width: 10%;
+    position: relative;
+}
+.gb2::after{
+    right:0.6rem;
+}
+.gb2::before{
+    font-size: 1.1rem;
+    right:0.9rem;
+    top: 108%;
+}
+.gb3{
+    width: 10%;
+}
+.gb3::after{
+    right:0.6rem;
+}
+.gb3::before{
+    font-size: 1.1rem;
+    right:0.8rem;
+    top: 108%;
+}
+.gb4{
+    width: 10%;
+}
+.gb4::after{
+    right:0.9rem;
+}
+.gb4::before{
+    font-size: 1.1rem;
+    right:0.5rem;
+    top: 113%;
+}
+/* -----------education section---------- */
+/* ---------Contact section--------- */
+    .form{
+        width: 80%;
+    }
+/* ---------Contact section--------- */
+
+}
+@media screen and (max-width:575px){
+/* -------navigation section---------- */
+    nav{
+        height: 6rem;
+    }
+    .sections{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .sections li a{
+        font-size: 14px;
+    }
+    .namesec{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .lns{
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .lns h1{
+        font-size: 2rem;
+    }
+    .lns p{
+        font-size: 1rem;
+    }
+    .prns::before{
+        font-size: 8rem;
+        top: -4rem;
+        left: -6rem;
+    }
+    .prns::after{
+        font-size: 8rem;
+        top: 7.2rem;
+        left: 16.5rem;
+    }
+/* -------navigation section---------- */
+/* ---------about section----------- */
+    .aboutsec h1{
+        font-size: 2.9rem;
+    }
+    .mds{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @keyframes mm{
+        0%{
+            transform: translateX(-10rem);
+            opacity: 0;
+        }
+    }
+    .about{
+        overflow-x: hidden;
+        width: 80%;
+        animation: mm 1s ease;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;        
+    }
+    .about h1 p{
+        font-size: 2.8rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+/* ---------about section----------- */
+/* ---------project section--------- */
+.bcld{
+    display: flex;
+    flex-direction: column;
+}
+.pd{
+    margin-left: 8%;
+    margin-bottom: 1.2rem;
+}
+.pi,.pd{
+    margin-top: -1rem;
+    animation:fadeup 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes fadeup{
+    0%{
+        transform: translateY(3rem);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* ---------project section--------- */
+/* --------education section--------- */
+.edusec h1{
+    font-size: 2.5rem;
+}
+.gbrder{
+    height: 20rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.gb{
+    animation-range: entry 100% cover 40%;
+}
+.gb1{
+    width: 10%;
+}
+.gb1::after{
+    right:0.3rem;
+}
+.gb1::before{
+    right:0.3rem;
+    top: 108%;
+}
+.gb2{
+    width: 10%;
+    position: relative;
+}
+.gb2::after{
+    right:0.3rem;
+}
+.gb2::before{
+    right:0.3rem;
+    top: 108%;
+}
+.gb3{
+    width: 10%;
+}
+.gb3::after{
+    right:0.3rem;
+}
+.gb3::before{
+    right:0.3rem;
+    top: 108%;
+}
+.gb4{
+    width: 10%;
+}
+.gb4::after{
+    right:0.3rem;
+}
+.gb4::before{
+    right:0.3rem;
+    top: 113%;
+}
+/* --------education section--------- */
+/* ---------Contact section--------- */
+.form{
+    padding: 2rem 2rem;
+    width: 80%;
+}
+.form a{
+    width: 10rem;
+    padding: 0.6rem;
+}
+.consec h1{
+    font-size: 2.5rem;
+}
+/* ---------Contact section--------- */
+}
+/* ---------media query----------- */
+
+
+
