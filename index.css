@@ -102,7 +102,7 @@ body{
 .prns{
      position: relative;
 }
-.prns::before{
+/* .prns::before{
     content: '<';
     font-weight: bolder;
     color: transparent;
@@ -123,7 +123,7 @@ body{
     position:absolute;
     top: 4rem;
     left:16rem;
-}
+} */
 @keyframes psd{
     from{
         opacity: 0;
@@ -595,66 +595,66 @@ body{
 /* ---------Contact section--------- */
 /* --------education section-------- */
 .gb{
-    animation-range: entry 95% cover 40%;
+    animation-range: entry 100% cover 40%;
     transform-origin: bottom;
     transition: all 1s ease-out;
 }
 .gbrder{
-    height: 35rem;
-    width: 70%;
-    margin-left: 15%;
+    height: 28rem;
+    width: 45%;
+    margin-left: 27%;
 }
 .gb1{
-    width: 7%;
+    width: 9%;
 }
 .gb1::after{
     font-size: 1.5rem;
     top: -2.5rem;
-    right:1rem;
+    right:0.5rem;
 }
 .gb1::before{
     font-size: 1.5rem;
-    right:1.1rem;
+    right:0.4rem;
     top: 108%;
 }
 .gb2{
-    width: 7%;
+    width: 9%;
     position: relative;
 }
 .gb2::after{
     font-size: 1.5rem;
     top: -2.5rem;
-    right:1rem;
+    right:0.3rem;
 }
 .gb2::before{
     font-size: 1.5rem;
-    right:1rem;
+    right:0.4rem;
     top: 108%;
 }
 .gb3{
-    width: 7%;
+    width: 9%;
 }
 .gb3::after{
     font-size: 1.5rem;
     top: -2.5rem;
-    right:1rem;
+    right:0.2rem;
 }
 .gb3::before{
     font-size: 1.5rem;
-    right:0.8rem;
+    right:0.2rem;
     top: 108%;
 }
 .gb4{
-    width: 7%;
+    width: 9%;
 }
 .gb4::after{
     font-size: 1.5rem;
     top: -6.5rem;
-    right:1.2rem;
+    right:0.7rem;
 }
 .gb4::before{
     font-size: 1.5rem;
-    right:0.6rem;
+    right:-0.1rem;
     top: 113%;
 }
 /* -------education section---------- */
@@ -669,64 +669,64 @@ body{
 /* ---------Contact section--------- */
 /* --------education section-------- */
 .gbrder{
-    height: 35rem;
-    width: 80%;
-    margin-left: 10%;
+    height: 28rem;
+    width: 50%;
+    margin-left: 25%;
 }
 .gb{
     animation-range: entry 100% cover 38%;
 }
 .gb1{
-    width: 9%;
+    width: 10%;
 }
 .gb1::after{
     font-size: 1.5rem;
     top: -2.5rem;
-    right:1rem;
+    right:0.2rem;
 }
 .gb1::before{
     font-size: 1.5rem;
-    right:1.3rem;
+    right:0.2rem;
     top: 108%;
 }
 .gb2{
-    width: 9%;
+    width: 10%;
     position: relative;
 }
 .gb2::after{
     font-size: 1.5rem;
     top: -2.5rem;
-    right:1rem;
+    right:0.1rem;
 }
 .gb2::before{
     font-size: 1.5rem;
-    right:1.2rem;
+    right:0.1rem;
     top: 108%;
 }
 .gb3{
-    width: 9%;
+    width: 10%;
 }
 .gb3::after{
     font-size: 1.5rem;
     top: -2.5rem;
-    right:1rem;
+    right:0.1rem;
 }
 .gb3::before{
     font-size: 1.5rem;
-    right:1rem;
+    right:0.1rem;
     top: 108%;
 }
 .gb4{
-    width: 9%;
+    width: 10%;
 }
 .gb4::after{
     font-size: 1.5rem;
     top: -6.5rem;
-    right:1.2rem;
+    right:0.7rem;
 }
 .gb4::before{
     font-size: 1.5rem;
-    right:0.8rem;
+    right:-0.2rem;
     top: 113%;
 }
 /* -------education section---------- */
@@ -741,8 +741,8 @@ body{
 /* --------education section-------- */
 .gbrder{
     height: 28rem;
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
 }
 .gb{
     animation-range: entry 100% cover 40%;
@@ -757,7 +757,7 @@ body{
 }
 .gb1::before{
     font-size: 1.3rem;
-    right:1.1rem;
+    right:0.3rem;
     top: 108%;
 }
 .gb2{
@@ -767,11 +767,11 @@ body{
 .gb2::after{
     font-size: 1.3rem;
     top: -2.5rem;
-    right:0.6rem;
+    right:0.4rem;
 }
 .gb2::before{
     font-size: 1.3rem;
-    right:1.2rem;
+    right:0.5rem;
     top: 108%;
 }
 .gb3{
@@ -780,11 +780,11 @@ body{
 .gb3::after{
     font-size: 1.3rem;
     top: -2.5rem;
-    right:0.7rem;
+    right:0.4rem;
 }
 .gb3::before{
     font-size: 1.3rem;
-    right:1rem;
+    right:0.1rem;
     top: 108%;
 }
 .gb4{
@@ -793,11 +793,11 @@ body{
 .gb4::after{
     font-size: 1.3rem;
     top: -5.7rem;
-    right:1.2rem;
+    right:1rem;
 }
 .gb4::before{
     font-size: 1.3rem;
-    right:0.8rem;
+    right:-0.1rem;
     top: 113%;
 }
 /* -------education section---------- */
@@ -827,9 +827,9 @@ body{
 /* ---------about section----------- */
 /* -----------education section---------- */
 .gbrder{
-    height: 27rem;
-    width: 80%;
-    margin-left: 10%;
+    height: 26rem;
+    width: 70%;
+    margin-left: 15%;
 }
 .gb{
     animation-range: entry 100% cover 40%;
@@ -876,7 +876,7 @@ body{
 }
 .gb4::before{
     font-size: 1.1rem;
-    right:0.5rem;
+    right:0.1rem;
     top: 113%;
 }
 /* -----------education section---------- */
@@ -1028,10 +1028,10 @@ body{
     width: 10%;
 }
 .gb4::after{
-    right:0.3rem;
+    right:0.5rem;
 }
 .gb4::before{
-    right:0.3rem;
+    right:-0.1rem;
     top: 113%;
 }
 /* --------education section--------- */
