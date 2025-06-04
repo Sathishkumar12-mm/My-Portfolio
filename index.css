@@ -102,28 +102,6 @@ body{
 .prns{
      position: relative;
 }
-/* .prns::before{
-    content: '<';
-    font-weight: bolder;
-    color: transparent;
-    filter: blur(5px);
-    -webkit-text-stroke:5px var(--main-color);
-    font-size: 16rem;
-    position: absolute;
-    top: -12rem;
-    left: -11rem;
-}
-.prns::after{
-    content: '>';
-    font-size: 16rem;
-    filter: blur(5px);
-    color: transparent;
-    -webkit-text-stroke:5px var(--main-color);
-    font-weight:bolder;
-    position:absolute;
-    top: 4rem;
-    left:16rem;
-} */
 @keyframes psd{
     from{
         opacity: 0;
@@ -898,7 +876,7 @@ body{
         justify-content: space-around;
     }
     .sections li a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .namesec{
         display: flex;
@@ -964,6 +942,9 @@ body{
     margin-left: 8%;
     margin-bottom: 1.2rem;
 }
+.pi{
+    margin: auto;
+}
 .pi,.pd{
     margin-top: -1rem;
     animation:fadeup 1s linear;
@@ -997,10 +978,10 @@ body{
     width: 10%;
 }
 .gb1::after{
-    right:0.3rem;
+    right:0.1rem;
 }
 .gb1::before{
-    right:0.3rem;
+    right:0.1rem;
     top: 108%;
 }
 .gb2{
@@ -1008,30 +989,30 @@ body{
     position: relative;
 }
 .gb2::after{
-    right:0.3rem;
+    right:0rem;
 }
 .gb2::before{
-    right:0.3rem;
+    right:0.1rem;
     top: 108%;
 }
 .gb3{
     width: 10%;
 }
 .gb3::after{
-    right:0.3rem;
+    right:0rem;
 }
 .gb3::before{
-    right:0.3rem;
+    right:0rem;
     top: 108%;
 }
 .gb4{
     width: 10%;
 }
 .gb4::after{
-    right:0.5rem;
+    right:0.3rem;
 }
 .gb4::before{
-    right:-0.1rem;
+    right:-0.2rem;
     top: 113%;
 }
 /* --------education section--------- */
