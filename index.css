@@ -887,6 +887,9 @@ body{
     .sections li a{
         font-size: 12px;
     }
+     .sections li:nth-child(1){
+        display: none;
+     }
     .namesec{
         display: flex;
         flex-direction: column-reverse;
